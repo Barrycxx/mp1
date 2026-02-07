@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: calc(14px + 0.2vw);
+  background: #eaf2fb;
+  color: #1f2937;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+header,
+nav,
+main,
+footer {
+  padding: 16px;
+}
+
+header {
+  background: #2b5fb8;
+  color: white;
+  border-radius: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: calc(22px + 0.8vw);
+  letter-spacing: 1px;
+}
+
+header p {
+  margin: 6px 0 0 0;
+  opacity: 0.9;
+}
+
+.layout {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+nav {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 8px 0;
+}
+
+nav a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: #e3ecfb;
+}
+
+main {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 100vh;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+main h2 {
+  margin-top: 0;
+  color: #2b5fb8;
+}
+
+footer {
+  margin-top: 16px;
+  text-align: center;
+  background: transparent;
+  color: #555;
+}
+
+@media (min-width: 1000px) {
+  nav {
+    width: 30%;
+  }
+
+  main {
+    width: 70%;
+  }
+}
+
+@media (min-width: 751px) {
+  header {
+    text-align: left;
+  }
+}
+
+@media (max-width: 750px) {
+  header {
+    text-align: center;
+  }
+
+  .layout {
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 0;
+  }
+}
+.home-intro {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.profile {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.intro-text {
+  flex: 1;
+}
+@media (max-width: 750px) {
+  .home-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile {
+    width: 140px;
+    height: 140px;
+  }
+}
