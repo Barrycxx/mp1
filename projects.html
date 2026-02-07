@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Projects | Online Resume</title>
 
-
     <link rel="stylesheet" href="styles.css" />
 
-    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,21 +35,50 @@
         </nav>
 
         <main>
-  <h2>projects</h2>
+          <h2>projects</h2>
 
-  <p>Some academic and personal projects:</p>
+          <p>Some academic and personal projects:</p>
+          <ul>
+            <li>Mini shell in C</li>
+            <li>Raft distributed system in Go</li>
+            <li>Web resume website (this site)</li>
+          </ul>
 
-  <ul>
-    <li>Mini shell in C</li>
-    <li>Raft distributed system in Go</li>
-    <li>Web resume website (this site)</li>
-  </ul>
+          <p>
+            <a href="#calc">Go to calculator ↓</a>
+          </p>
 
-  <p>
-    A JavaScript calculator will be added below as part of this project.
-  </p>
-</main>
+          <hr />
 
+          <div id="calc"></div>
+
+          <h2 class="calc-title">Barry's Calculator</h2>
+
+          <div class="calculator-card">
+            <div class="inputs">
+              <div class="field">
+                <input type="text" id="first-number" placeholder="Enter first number" />
+              </div>
+
+              <div class="field">
+                <input type="text" id="second-number" placeholder="Enter second number" />
+              </div>
+            </div>
+
+            <div class="buttons">
+              <button onclick="addition()">+</button>
+              <button onclick="subtraction()">-</button>
+              <button onclick="multiplication()">*</button>
+              <button onclick="division()">/</button>
+              <button onclick="power()">**</button>
+              <button onclick="clearCalc()">Clear</button>
+            </div>
+
+            <div class="result">
+              <p id="output">Result will appear here</p>
+            </div>
+          </div>
+        </main>
       </div>
 
       <footer>
@@ -61,5 +88,7 @@
         </p>
       </footer>
     </div>
+
+    <script src="calculator.js"></script>
   </body>
 </html>
